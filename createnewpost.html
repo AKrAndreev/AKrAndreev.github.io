@@ -6,30 +6,38 @@
     <link rel="stylesheet" href="styles/style.css">
     <script src="scripts/jquery-3.3.1.js"></script>
     <script src="scripts/bootstrap.js"></script>
-
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
 <header>
-    <div class="navbar navbar-default navbar-fixed-top text-uppercase">
-        <div class="container">
-
+    <nav class="navbar  navbar-inverse navbar-fixed-top text-uppercase">
+        <div class="container-fluid">
             <div class="navbar-header">
-                <a href="index.html" class="navbar-brand">Blog</a>
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+                <a class="navbar-brand" href="index.html">Blog</a>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Welcome (User)</a></li>
-                    <li><a href="#">New post</a></li>
-                    <li><a href="#">Logout</a></li>
-                </ul>
-            </div>
+            <ul class="nav navbar-nav navbar-right">
+
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <span class="glyphicon glyphicon-user"></span>
+                        <strong>User</strong>
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="index.html">Logout</a></li>
+                    </ul>
+                </li>
+
+            </ul>
         </div>
-    </div>
+    </nav>
 </header>
 
 <main>
@@ -67,7 +75,7 @@
 </main>
 
 <footer>
-    <div class="container modal-footer">
+    <div class="container modal-footer navbar-fixed-bottom">
         <p>&copy; 2018 - Andrew Smart Solutions</p>
     </div>
 </footer>
